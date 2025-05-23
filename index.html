@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Front-end Books</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header class="books__header">
-    <h1>Top Front-end Books</h1>
-    <nav class="menu">
-      <a href="#about">About</a>
-      <a href="#books">Books</a>
-      <a href="#contact">Contact</a>
+
+<body class="bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 text-gray-800 font-sans">
+  <header
+    class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white p-6 shadow-md flex flex-col sm:flex-row sm:justify-between items-center">
+    <h1 class="text-3xl font-bold mb-4 sm:mb-0">Top Front-end Books</h1>
+    <nav class="space-x-4 text-lg">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#books" class="hover:underline">Books</a>
+      <a href="#contact" class="hover:underline">Contact</a>
     </nav>
   </header>
-
-  <section id="about" class="about">
-    <h2>About This Collection</h2>
-    <p>Here are some of the best books to learn front-end development, covering HTML, CSS, JavaScript, and more.</p>
-    <img src="https://via.placeholder.com/100" alt="Bookshelf image">
+ 
+  <section id="about" class="py-12 px-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl font-semibold mb-4 text-purple-700">About This Collection</h2>
+    <p class="mb-4 text-gray-600">Here are some of the best books to learn front-end development, covering HTML, CSS,
+      JavaScript, and more.</p>
+    <img src="https://via.placeholder.com/100" alt="Bookshelf image"
+      class="mx-auto rounded-full shadow-lg border-4 border-purple-300">
   </section>
-
-  <section id="books" class="books">
-    <h2>Featured Books</h2>
-    <div id="book-list" class="book-list"></div>
+  
+  <section id="books" class="bg-white py-12 px-6 max-w-5xl mx-auto rounded-lg shadow-inner">
+    <h2 class="text-2xl font-semibold mb-6 text-center text-pink-600">Featured Books</h2>
+    <div id="book-list" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
   </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>For suggestions or book recommendations, reach out at <a href="mailto:frontbooks@example.com">frontbooks@example.com</a>.</p>
+  
+  <section id="contact"
+    class="bg-gradient-to-r from-pink-100 to-blue-100 py-12 px-6 max-w-4xl mx-auto text-center rounded-lg shadow">
+    <h2 class="text-2xl font-semibold mb-4 text-indigo-700">Contact</h2>
+    <p class="text-gray-700">
+      For suggestions or book recommendations, reach out at
+      <a href="mailto:frontbooks@example.com" class="text-pink-600 hover:underline">frontbooks@example.com</a>.
+    </p>
   </section>
-
   <script src="app.js"></script>
 </body>
+
 </html>
